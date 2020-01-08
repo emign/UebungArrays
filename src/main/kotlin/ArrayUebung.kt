@@ -6,7 +6,7 @@ object ArrayUebung {
      * @return IntArray
      */
     fun intArrayErstellen(laenge: Int): IntArray {
-        return IntArray(laenge)
+       TODO()
     }
 
     /**
@@ -18,7 +18,7 @@ object ArrayUebung {
      * @return Int
      */
     fun summeUeberArray(array: IntArray): Int {
-        return array.sum()
+       TODO()
     }
 
     /**
@@ -29,10 +29,7 @@ object ArrayUebung {
      * @return IntArray
      */
     fun vertauscheIndizes(i: Int, j: Int, array: IntArray): IntArray {
-        val tmp = array[i]
-        array[i] = array[j]
-        array[j] = tmp
-        return array
+        TODO()
     }
 
     /**
@@ -43,7 +40,7 @@ object ArrayUebung {
      * @return IntArray
      */
     fun invertiere(array: IntArray): IntArray {
-        return array.reversedArray()
+        TODO()
     }
 
     /**
@@ -55,13 +52,6 @@ object ArrayUebung {
      * @return Das entsprechende Wort.
      */
     fun charArrayMischenBisWortHerauskommt(wort: String, array: CharArray): String {
-        while (String(array) != wort) {
-            val rnd = array.indices.random()
-            val rnd2 = array.indices.random()
-            val tmp = array[rnd]
-            array[rnd] = array[rnd2]
-            array[rnd2] = tmp
-        }
-        return String(array)
+       TODO()
     }
 }
