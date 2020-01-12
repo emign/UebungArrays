@@ -30,6 +30,16 @@ class Test {
     }
 
     @Test
+    fun testArrayVon0bis9(){
+        Assert.assertEquals(arrayOf(0,1,2,3,4,5,6,7,8,9).toIntArray().joinToString(), ArrayUebung.arrayVon0bis9().joinToString())
+    }
+
+    @Test
+    fun testArrayVon1bis10(){
+        Assert.assertEquals(arrayOf(1,2,3,4,5,6,7,8,9,10).toIntArray().joinToString(), ArrayUebung.arrayVon0bis9().joinToString())
+    }
+
+    @Test
     fun testSummeUeberArrayNegatives() {
         Assert.assertEquals(1, ArrayUebung.summeUeberArray(array2))
     }
@@ -117,5 +127,23 @@ class Test {
     @Test
     fun testCharArrayMischenSingleChar() {
         Assert.assertEquals("z", ArrayUebung.charArrayMischenBisWortHerauskommt("z", arrayOf('z').toCharArray()))
+    }
+
+    @Test
+    fun testPersonenArray(){
+        val p1 = Person("Hans")
+        val p2 = Person("Peter")
+        val p3 = Person("Sonja")
+        Assert.assertEquals("null, eins, zwei", ArrayUebung.personenArray(arrayOf(p1,p2,p3)).map { it.wartenummer }.joinToString()  )
+
+    }
+
+    @Test
+    fun testPersonenArray2(){
+        val p1 = Person("Hans")
+        val p2 = Person("Peter")
+        val p3 = Person("Sonja")
+        Assert.assertEquals("null, eins, zwei", ArrayUebung.personenArray(arrayOf(p1,p3,p2)).map { it.wartenummer }.joinToString()  )
+
     }
 }

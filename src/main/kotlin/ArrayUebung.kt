@@ -22,6 +22,22 @@ object ArrayUebung {
     }
 
     /**
+     * Gibt ein 10-stelliges Array zurück, welches an den Indexpositionen die Werte 0 bis 9 enthält
+     * @return IntArray
+     */
+    fun arrayVon0bis9() : IntArray {
+        TODO()
+    }
+
+    /**
+     * Gibt ein 10-stelliges Array zurück, welches an den Indexpositionen die Werte 1 bis 10 enthält
+     * @return IntArray
+     */
+    fun arrayVon1bis10() : IntArray {
+        TODO()
+    }
+
+    /**
      * Vertauscht die Werte an den Index-Positionen i und j miteinander und gibt das Array zurück
      * @param i IndexPositon 1
      * @param j IndexPositon 2
@@ -53,5 +69,17 @@ object ArrayUebung {
      */
     fun charArrayMischenBisWortHerauskommt(wort: String, array: CharArray): String {
        TODO()
+    }
+
+    /**
+     * Erhält ein Personen Array und soll das Array so anpassen, dass die Wartenummer der Personen
+     * den String enthält, der ihrer Array-Position entspricht
+     * Das Array [Person, Person, Person] soll also Personen mit den Wartenummern "eins", "zwei", "drei" usw. tragen
+     * Es sollen nur Array-Längen unter 10 Indexpositionen verarbeitet werden.
+     * @param laenge Int
+     * @return Array<Person>
+     */
+    fun personenArray(pArray : Array<Person>) : Array<Person>{
+        TODO()
     }
 }
